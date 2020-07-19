@@ -1,27 +1,27 @@
 # Analysing world news with the Gdelt Project. 
 
-Here I will be attaching all my Gdelt-related leisure projects.
+Here I will be attaching all my Gdelt-related leisure projects. List of projects:
 
-- Socioeconomic Portrait Project. 
-    - Python, SQL.
-    - Full ETL in Google Cloud Platform, dashboarding.
-    - Bigquery and the Gdelt Project.
+**1. Socioeconomic Portrait Project.** 
+- Python, SQL.
+- Full ETL in Google Cloud Platform, dashboarding.
+- Bigquery and the Gdelt Project.
 
-- Elon Musk influence in world news.
-    - SQL.
-    - Bigquery, the Gdelt Project, dashboarding.
+**2. Elon Musk influence in world news.**
+- SQL.
+- Bigquery, the Gdelt Project, dashboarding.
 
 
-- Controversial public figures with Gdelt.
-    - SQL.
-    - Bigquery, the Gdelt Project, dashboarding.
+**3. Controversial public figures with Gdelt.**
+- SQL.
+- Bigquery, the Gdelt Project, dashboarding.
 
 
 
 
 --------------------------
 
-### Socioeconomic Portrait Project. A Google Cloud ETL.
+# Socioeconomic Portrait Project. A Google Cloud ETL.
 
 
 Is there a way of monitoring some aspects of the global crisis in Spain? I believe so, and this is the motivation to develop this automated **ETL** process in **Google Cloud** involving **Google Trends**, sentiment analysis and influence in news through **the Gdelt Project** and **Twitter**, from raw data acquisition to the final dashboard. Thanks to it, I have been fighting with credentials, permissions, storage locations, processing locations, 3rd party authentications, Cloud Functions, pipelines, trigger schedulers with different time format, Dataprep global updates, etc... And I learned a lot in the way, quaratine fun! :D
@@ -45,7 +45,7 @@ It is worth mentioning the selector buttons are there just to have a clear pictu
 
 ---------------------------------
 
-### Elon Musk influence in world news:
+# Elon Musk influence in world news:
 
 
 What the world media say about Elon Musk or his companies? That is the sentiment associated to his related news? What were the most positive and negative articles ever written about him? Let's check it out.
@@ -62,7 +62,7 @@ Also interesting is the fact that the webpages I was expecting to see appears fr
 
 -----------------------------
 
-### Controversial public figures with Gdelt:
+# Controversial public figures with Gdelt:
 
 I like reading "alternative" sources, like reddit, *hackernews* or *meneame*, and once in a while I read some news about delicate matters involving the King Emeritus of Spain. This articles always express a deep frustration about how this news are not being published in his country.
 
@@ -82,5 +82,6 @@ Do we have a method to impartially contrast it?
 ------------
 ------------
 
-- Alberto Vargas. 
+
+Alberto Vargas. 
 - **https://www.linkedin.com/in/alberto-vargas-pina/**
