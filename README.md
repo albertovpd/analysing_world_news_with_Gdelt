@@ -3,19 +3,27 @@
 Here I will be attaching all my Gdelt-related leisure projects. List of projects:
 
 **1. Socioeconomic Portrait Project.** 
+
 - Python, SQL.
 - Full ETL in Google Cloud Platform, dashboarding.
 - Bigquery and the Gdelt Project.
+- Dashboard => https://datastudio.google.com/reporting/755f3183-dd44-4073-804e-9f7d3d993315
 
 **2. Elon Musk influence in world news.**
-- SQL.
-- Bigquery, the Gdelt Project, dashboarding.
+
+- SQL, Bigquery, the Gdelt Project, dashboarding.
+- Dashboard => https://datastudio.google.com/u/0/reporting/4578bcda-00a9-46e5-aacc-d773bfb360c2
 
 
 **3. Controversial public figures with Gdelt.**
-- SQL.
-- Bigquery, the Gdelt Project, dashboarding.
 
+- SQL, Bigquery, the Gdelt Project, dashboarding.
+- Dashboard => https://datastudio.google.com/s/nShAIQD96fc
+
+**4. Monitoring unemployment in Spain.**
+
+- SQL, Bigquery, the Gdelt Project, dashboarding.
+- Dashboard => https://datastudio.google.com/u/1/reporting/a038e53e-ba0d-49a6-b8c9-6893445cc54a/page/UVSZB
 
 
 
@@ -77,6 +85,22 @@ Do we have a method to impartially contrast it?
 - Repository => https://github.com/albertovpd/analysing_controversial_public_figures_gdelt
 
 ![alt](pics/controversial_project.png)
+
+----------------------------------------
+
+# Monitoring Unemployment
+
+Everyone is afraid right now of a Global crisis like in 2008. Can we check how often is mentioned in national press unemployment-related topics, and compare nowadays results with the 2008 ones?
+
+The answer: Yes
+If we also want to check the involved articles: Just from 2015.
+
+
+- Dashboard => https://datastudio.google.com/u/1/reporting/a038e53e-ba0d-49a6-b8c9-6893445cc54a/page/UVSZB
+
+- Repository => https://github.com/albertovpd/monitoring_unemployment
+
+![alt](pics/unemployment.png)
 
 
 ------------
