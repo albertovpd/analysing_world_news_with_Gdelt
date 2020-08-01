@@ -1,6 +1,12 @@
 # Analysing world news with the Gdelt Project. 
 
-Here I will be attaching all my Gdelt-related leisure projects. List of projects:
+Here I will be attaching all my Gdelt-related leisure projects. The list of projects briefly involves:
+- Used tools and languages.
+- Dashboard url.
+- Repository url.
+- Preview of each project (after the list).
+
+----------------------------------------------
 
 **1. Socioeconomic Portrait Project.** 
 
@@ -8,22 +14,28 @@ Here I will be attaching all my Gdelt-related leisure projects. List of projects
 - Full ETL in Google Cloud Platform, dashboarding.
 - Bigquery and the Gdelt Project.
 - Dashboard => https://datastudio.google.com/reporting/755f3183-dd44-4073-804e-9f7d3d993315
+- Repository => https://github.com/albertovpd/automated_etl_google_cloud-social_dashboard
 
 **2. Elon Musk influence in world news.**
 
 - SQL, Bigquery, the Gdelt Project, dashboarding.
 - Dashboard => https://datastudio.google.com/u/0/reporting/4578bcda-00a9-46e5-aacc-d773bfb360c2
+- Repository => https://github.com/albertovpd/elon_musk_influence_in_news
+
 
 
 **3. Controversial public figures with Gdelt.**
 
 - SQL, Bigquery, the Gdelt Project, dashboarding.
 - Dashboard => https://datastudio.google.com/s/nShAIQD96fc
+- Repository => https://github.com/albertovpd/analysing_controversial_public_figures_gdelt
+
 
 **4. Monitoring unemployment in Spain.**
 
 - SQL, Bigquery, the Gdelt Project, dashboarding.
 - Dashboard => https://datastudio.google.com/u/1/reporting/a038e53e-ba0d-49a6-b8c9-6893445cc54a/page/UVSZB
+- Repository => https://github.com/albertovpd/monitoring_unemployment
 
 
 
