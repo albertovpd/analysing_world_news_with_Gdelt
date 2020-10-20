@@ -43,6 +43,8 @@ Here I will be attaching all my Gdelt-related leisure projects. The list of proj
 
 # Socioeconomic Portrait Project. A Google Cloud ETL.
 
+<details>
+  <summary>Click to expand</summary>
 
 Is there a way of monitoring some aspects of the global crisis in Spain? I believe so, and this is the motivation to develop this automated **ETL** process in **Google Cloud** involving **Google Trends**, sentiment analysis and influence in news through **the Gdelt Project** and **Twitter**, from raw data acquisition to the final dashboard. Thanks to it, I have been fighting with credentials, permissions, storage locations, processing locations, 3rd party authentications, Cloud Functions, pipelines, trigger schedulers with different time format, Dataprep global updates, etc... And I learned a lot in the way, quaratine fun! :D
 
@@ -62,11 +64,14 @@ Is there a way of monitoring some aspects of the global crisis in Spain? I belie
 It is worth mentioning the selector buttons are there just to have a clear picture of graphs. With them you can select the curves you want.
 ![alt](pics/socioeconomic_project.png)
 
+</details>
 
 ---------------------------------
 
 # Elon Musk influence in world news:
 
+<details>
+  <summary>Click to expand</summary>
 
 What the world media say about Elon Musk or his companies? That is the sentiment associated to his related news? What were the most positive and negative articles ever written about him? Let's check it out.
 
@@ -80,9 +85,14 @@ Also interesting is the fact that the webpages I was expecting to see appears fr
 
 ![alt](pics/elon_project.png)
 
+</details>
+
 -----------------------------
 
 # Controversial public figures with Gdelt:
+
+<details>
+  <summary>Click to expand</summary>
 
 I like reading "alternative" sources, like reddit, *hackernews* or *meneame*, and once in a while I read some news about delicate matters involving the King Emeritus of Spain. This articles always express a deep frustration about how this news are not being published in his country.
 
@@ -98,9 +108,14 @@ Do we have a method to impartially contrast it?
 
 ![alt](pics/controversial_project.png)
 
+</details>
+
 ----------------------------------------
 
 # Monitoring Unemployment
+
+<details>
+  <summary>Click to expand!</summary>
 
 Everyone is afraid right now of a Global crisis like in 2008. Can we check how often is mentioned in national press unemployment-related topics, and compare nowadays results with the 2008 ones?
 
@@ -114,6 +129,7 @@ If we also want to check the involved articles: Just from 2015.
 
 ![alt](pics/unemployment.png)
 
+</details>
 
 ------------
 ------------
