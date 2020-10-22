@@ -6,12 +6,14 @@ Here I will be attaching all my Gdelt-related leisure projects. The list of proj
 - Repository url.
 - Preview of each project (after the list).
 
+The only one weekly automated is the first one (once I know by heart how to do it, there is no point on replicating it), nevertheless you can find instructions to automate the updates in all of them.
+
 ----------------------------------------------
 
 **1. Socioeconomic Portrait Project.** 
 
+- Automated ETL in Google Cloud Platform weekly updated, dashboarding.
 - Python, SQL.
-- Full ETL in Google Cloud Platform, dashboarding.
 - Bigquery and the Gdelt Project.
 - Dashboard => https://datastudio.google.com/reporting/755f3183-dd44-4073-804e-9f7d3d993315
 - Repository => https://github.com/albertovpd/automated_etl_google_cloud-social_dashboard
@@ -23,19 +25,23 @@ Here I will be attaching all my Gdelt-related leisure projects. The list of proj
 - Repository => https://github.com/albertovpd/elon_musk_influence_in_news
 
 
+**3. Monitoring unemployment in Spain.**
 
-**3. Controversial public figures with Gdelt.**
+I really like this one. It is the most visual, it tells a story, and sources that feed the graphs are shown, you can navigate through them.
+
+- SQL, Bigquery, the Gdelt Project, dashboarding.
+- Dashboard => https://datastudio.google.com/u/1/reporting/a038e53e-ba0d-49a6-b8c9-6893445cc54a/page/UVSZB
+- Repository => https://github.com/albertovpd/monitoring_unemployment
+
+
+**4. Controversial public figures with Gdelt.**
 
 - SQL, Bigquery, the Gdelt Project, dashboarding.
 - Dashboard => https://datastudio.google.com/s/nShAIQD96fc
 - Repository => https://github.com/albertovpd/analysing_controversial_public_figures_gdelt
 
 
-**4. Monitoring unemployment in Spain.**
 
-- SQL, Bigquery, the Gdelt Project, dashboarding.
-- Dashboard => https://datastudio.google.com/u/1/reporting/a038e53e-ba0d-49a6-b8c9-6893445cc54a/page/UVSZB
-- Repository => https://github.com/albertovpd/monitoring_unemployment
 
 
 
@@ -89,6 +95,28 @@ Also interesting is the fact that the webpages I was expecting to see appears fr
 
 -----------------------------
 
+
+# Monitoring Unemployment
+
+<details>
+  <summary>Click to expand</summary>
+
+Everyone is afraid right now of a Global crisis like in 2008. Can we check how often is mentioned in national press unemployment-related topics, and compare nowadays results with the 2008 ones?
+
+The answer: Yes
+If we also want to check the involved articles: Just from 2015.
+
+
+- Dashboard => https://datastudio.google.com/u/1/reporting/a038e53e-ba0d-49a6-b8c9-6893445cc54a/page/UVSZB
+
+- Repository => https://github.com/albertovpd/monitoring_unemployment
+
+![alt](pics/unemployment.png)
+
+</details>
+
+------------
+
 # Controversial public figures with Gdelt:
 
 <details>
@@ -111,27 +139,6 @@ Do we have a method to impartially contrast it?
 </details>
 
 ----------------------------------------
-
-# Monitoring Unemployment
-
-<details>
-  <summary>Click to expand!</summary>
-
-Everyone is afraid right now of a Global crisis like in 2008. Can we check how often is mentioned in national press unemployment-related topics, and compare nowadays results with the 2008 ones?
-
-The answer: Yes
-If we also want to check the involved articles: Just from 2015.
-
-
-- Dashboard => https://datastudio.google.com/u/1/reporting/a038e53e-ba0d-49a6-b8c9-6893445cc54a/page/UVSZB
-
-- Repository => https://github.com/albertovpd/monitoring_unemployment
-
-![alt](pics/unemployment.png)
-
-</details>
-
-------------
 ------------
 
 
