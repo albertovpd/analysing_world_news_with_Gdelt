@@ -14,9 +14,19 @@ The only one weekly automated is the first one (once I know by heart how to do i
 
 - Automated ETL in Google Cloud Platform weekly updated, dashboarding.
 - Python, SQL.
-- Bigquery and the Gdelt Project.
+- Bigquery and the Gdelt Project, Google Trends.
 - Dashboard => https://datastudio.google.com/reporting/755f3183-dd44-4073-804e-9f7d3d993315
 - Repository => https://github.com/albertovpd/automated_etl_google_cloud-social_dashboard
+
+**5. Automated ML regression within a Cloud Function to infer unemployment searches on Google, in Spain.**
+
+- Automated ETL in Google Cloud Platform weekly updated, dashboarding.
+- Python.
+- Bigquery and the Gdelt Project, Google Trends.
+- Dashboard => https://datastudio.google.com/s/m68cZQGKVpk
+- Repository => https://github.com/albertovpd/automated_ML_regression
+
+
 
 **2. Elon Musk influence in world news.**
 
@@ -73,6 +83,40 @@ It is worth mentioning the selector buttons are there just to have a clear pictu
 </details>
 
 ---------------------------------
+
+
+# Automated ML regression within a Cloud Function to infer unemployment searches on Google, in Spain:
+
+<details>
+  <summary>Click to expand</summary>
+
+Taking advantage of this project ( https://github.com/albertovpd/automated_etl_google_cloud-social_dashboard ), i am using the gathered data to feed a ML model with which inferring unemployment searches on Google, in Spain.
+
++ Cloud Function A: Loads data from BigQuery tables to Cloud Storage, both in EEUU region. This tables contain requested and filtered info from the Gdelt Project, to analyse online news media in Spain (news section in the automated ETL link).
+
+- Cloud Function B: 
+  - Reads the data of Cloud Function A, and other data from a bucket in EU. This bucket contains requested info from Google Trends in Spain (Google searches section in the automated ETL link).
+  - Merges datasets with different length and dates.
+  - Processes them and creates a column and score for each keyword.
+  - Normalises the final dataset.
+  - Associate date with index, but dates are not in the game, so a time series problem was turned into a linear regression one. Check it out the full script explanation here.
+  - Performs a Recursive Feature Elimination to select the best 20 features of 130 I have to play with.
+  - Apply a linear regression to infer my keyword, in this case, unemployment. 
+  - Loads the results in a Cloud Storage bucket.
+
++ Both Cloud Functions are triggered by Pub/Sub and Scheduler. Scripts can be found here.
+
++ Weekly loaded to BigQuery tables with Transfer. Some results appended to the existing tables and some overwritten. 
+
++ Plot the BigQuery tables.
+
+Explanation available here => https://github.com/albertovpd/automated_ML_regression/blob/master/script_explained.ipynb
+
+![alt](pics/pics/automated_ml_regression.gif)
+
+</details>
+
+-----------------------------------------
 
 # Elon Musk influence in world news:
 
