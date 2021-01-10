@@ -50,7 +50,11 @@ I really like this one. It is the most visual, it tells a story, and sources tha
 - Dashboard => https://datastudio.google.com/s/nShAIQD96fc
 - Repository => https://github.com/albertovpd/analysing_controversial_public_figures_gdelt
 
+**6. Gdelt project as marketing tool**
 
+- SQL, Bigquery, the Gdelt Project, dashboarding.
+- Dashboard => https://datastudio.google.com/reporting/f478f75f-6bf9-4d74-bc54-40e775c21f19
+- Medium article => https://albertovpd.medium.com/biqquery-and-the-gdelt-project-beyond-dreams-of-marketing-analysts-62e586cc0343
 
 
 
@@ -179,6 +183,55 @@ Do we have a method to impartially contrast it?
 - Repository => https://github.com/albertovpd/analysing_controversial_public_figures_gdelt
 
 ![alt](pics/controversial_project.png)
+
+</details>
+
+------------------------------------
+
+# Gdelt project as marketing tool.
+
+<details>
+  <summary>Click to expand</summary>
+
+Using the different sentiment analysis metrics provided by The Gdelt Project.
+
+- Dashboard => https://datastudio.google.com/reporting/f478f75f-6bf9-4d74-bc54-40e775c21f19
+- Medium article => https://albertovpd.medium.com/biqquery-and-the-gdelt-project-beyond-dreams-of-marketing-analysts-62e586cc0343
+
+Query:
+
+    SELECT
+      EXTRACT (date
+      FROM
+          PARSE_TIMESTAMP('%Y%m%d%H%M%S',CAST(date AS string))) AS Date,
+      CAST(SPLIT(V2Tone, ",") [
+      OFFSET
+          (0)] AS FLOAT64) AS tone,
+      CAST(SPLIT(V2Tone, ",") [
+      OFFSET
+          (1)] AS FLOAT64) AS pos_score,
+      CAST(SPLIT(V2Tone, ",") [
+      OFFSET
+          (2)] AS FLOAT64) AS neg_score,
+      CAST(SPLIT(V2Tone, ",") [
+      OFFSET
+          (3)] AS FLOAT64) AS polarity,
+      CAST(SPLIT(V2Tone, ",") [
+      OFFSET
+          (4)] AS FLOAT64) AS arf,
+      CAST(SPLIT(V2Tone, ",") [
+      OFFSET
+          (5)] AS FLOAT64) AS sg_rf,
+      CAST(SPLIT(V2Tone, ",") [
+      OFFSET
+          (6)] AS FLOAT64) AS wc
+      FROM
+      `gdelt-bq.gdeltv2.gkg_partitioned`
+      WHERE
+      DATE(_PARTITIONTIME) >= "2018-01-01"
+      AND lower(DocumentIdentifier) LIKE '%ironhack%'
+    
+*If you are going to display results in Data Studio, always save the query in a BigQuery table and display that results.*
 
 </details>
 
