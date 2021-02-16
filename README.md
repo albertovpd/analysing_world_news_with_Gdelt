@@ -6,7 +6,8 @@ Here I will be attaching all my Gdelt-related leisure projects. The list of proj
 - Repository url.
 - Preview of each project (after the list).
 
-The only one weekly automated is the first one (once I know by heart how to do it, there is no point on replicating it), nevertheless you can find instructions to automate the updates in all of them.
+The goal of this repo is to reinforce knowledge about Google Cloud Engineering, Data Analysis, **Gdelt Project** intelligence and Dashboarding. Mainly written with Python and SQL.
+
 
 ----------------------------------------------
 
